@@ -1,6 +1,13 @@
 /* styles */
 /* called by your view template */
 
+::root{
+  
+  --main-text-color: #83D0F2;
+  --main-color: rgb(34, 34, 2);
+  
+}
+
 * {
   box-sizing: border-box;
 }
@@ -20,7 +27,8 @@ header {
 .footer__inner {
   
   margin: 0 auto;
-  color: #22222;
+  color: var(--main-text-color);
+  background-color: var(--main-color);
   
 }
 
