@@ -33,7 +33,7 @@ main {
 
 footer {
   
-  margin: auto 15%;
+/*   margin: auto 15%; */
   
 }
 
@@ -47,19 +47,6 @@ footer {
   text-align: center;
   display:inline;
 
-  
-}
-
-.header__inner {
-  
-  margin: 0 auto;
-  
-}
-
-.header__navbar {
-  
-  display:block;
-  
 }
 
 .header__navbar-links {
@@ -89,15 +76,19 @@ footer {
   
 }
 
-.footer__navbar {
+.footer{
   
-  display:block;
-  
-}
+  background-color: var(--main-secondary-color);
+  color: var(--main-primary-color);
 
-.footer__inner-container {
+  display:flex;
+  flex-wrap: wrap;
   
-    margin: 0 auto;
+  position: fixed;
+  bottom:0;
+  
+  width:100%;
+  
   
 }
 
@@ -112,20 +103,3 @@ footer {
   padding: 10px 10px 10px 10px;  
   
 }
-
-.footer__inner{
-  
-  background-color: var(--main-secondary-color);
-  color: var(--main-primary-color);
-
-  display:flex;
-  flex-wrap: wrap;
-  
-  position: fixed;
-  bottom:0;
-  
-  width:100%;
-  
-}
-
-
