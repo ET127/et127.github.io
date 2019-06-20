@@ -42,8 +42,8 @@ footer {
   
   background-color: var(--main-secondary-color);
   color: var(--main-primary-color);
-  position: fixed;
-/*   top:0; */
+/*   position: fixed; */
+  top:0;
   width:100%;
   text-align: center;
   display:inline;
@@ -113,7 +113,7 @@ footer {
 
 .footer__inner, .header__navbar {
   
-  text-align: center;
+/*   text-align: center; */
   
 }
 
