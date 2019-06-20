@@ -32,12 +32,6 @@ main {
   
 }
 
-footer {
-  
-  
-  
-}
-
 .header__inner {
   
   margin: 0 auto;
@@ -80,6 +74,14 @@ footer {
   
 }
 
+.footer {
+  
+  position: fixed;
+  bottom:0;
+  width:100%;
+  text-align: center;
+  
+}
 
 .footer__inner {
   
