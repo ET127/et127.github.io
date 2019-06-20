@@ -10,3 +10,22 @@ body {
   font-family: 'Roboto';
   
 }
+
+header {
+  
+  margin: 0 auto;
+  
+}
+
+.footer__inner {
+  
+  margin: 0 auto;
+  color: #22222;
+  
+}
+
+.header__inner, .header__navbar {
+  
+  text-align: center;
+  
+}
