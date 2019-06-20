@@ -3,8 +3,8 @@
 
 :root{
   
-  --main-text-color: #83D0F2;
-  --main-color: rgb(34, 34, 2);
+  --main-primary-color: #83D0F2;
+  --main-secondary-color: rgb(34, 34, 2);
   
 }
 
@@ -22,7 +22,7 @@ body {
 
 header {
   
-  background-color: var(--main-color);
+  background-color: var(--main-secondary-color);
   
 }
 
@@ -34,7 +34,7 @@ main {
 
 footer {
   
-    background-color: var(--main-color);
+  background-color: var(--main-secondary-color);
   
 }
 
@@ -52,15 +52,12 @@ footer {
 .header__inner {
   
   margin: 0 auto;
-  color: var(--main-text-color);
-  
   
 }
 
 .header__navbar {
   
   display:block;
-  width:;
   
 }
 
@@ -91,28 +88,9 @@ footer {
   
 }
 
-.footer {
-  
-  
-  position: fixed;
-  bottom:0;
-  width:100%;
-/*   text-align: center; */
-
-  
-}
-
 .footer__inner-container {
   
     margin: 0 auto;
-  
-}
-
-
-
-.footer__copyright-quote > p{
-  
-  
   
 }
 
@@ -130,9 +108,13 @@ footer {
 
 .footer__inner{
   
-  color: var(--main-text-color);
+  color: var(--main-primary-color);
   display:flex;
   flex-wrap: wrap;
+  
+  position: fixed;
+  bottom:0;
+  width:100%;
   
 }
 
