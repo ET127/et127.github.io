@@ -65,13 +65,12 @@ footer {
   
     display:flex;
     flex-wrap: wrap;
-    width:25%;
   
 }
 
-.header__navbar-links > li{
+.header__navbar-links li{
  
-  display:block;
+  display:inline;
   
 }
 
