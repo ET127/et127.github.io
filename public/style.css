@@ -22,7 +22,6 @@ body {
 
 header {
   
-  background-color: var(--main-secondary-color);
   
 }
 
@@ -34,12 +33,14 @@ main {
 
 footer {
   
-  background-color: var(--main-secondary-color);
+  margin: auto 15%;
   
 }
 
 .header {
   
+  background-color: var(--main-secondary-color);
+  color: var(--main-primary-color);
   position: fixed;
   top:0;
   width:100%;
@@ -88,6 +89,12 @@ footer {
   
 }
 
+.footer__navbar {
+  
+  display:block;
+  
+}
+
 .footer__inner-container {
   
     margin: 0 auto;
@@ -108,13 +115,17 @@ footer {
 
 .footer__inner{
   
+  background-color: var(--main-secondary-color);
   color: var(--main-primary-color);
+
   display:flex;
   flex-wrap: wrap;
   
   position: fixed;
   bottom:0;
+  
   width:100%;
   
 }
+
 
