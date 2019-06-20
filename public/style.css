@@ -66,7 +66,7 @@ footer {
 
 .header__navbar-links li{
  
-  display:inline;
+    display:inline;
   
 }
 
@@ -76,30 +76,48 @@ footer {
   
 }
 
-.footer{
+.footer {
   
   background-color: var(--main-secondary-color);
   color: var(--main-primary-color);
-
-  display:flex;
-  flex-wrap: wrap;
-  
   position: fixed;
   bottom:0;
-  
   width:100%;
+  text-align: center;
+  display:inline;
+
+}
+
+.footer__navbar-links {
   
+  list-style-type: none;
+  margin: 0;
+  padding:0;
   
 }
 
-.footer__copyright-quote {
-
-  padding: 10px 10px 10px 10px;
+.footer__navbar-links > ul{
+  
+    display:flex;
+    flex-wrap: wrap;
   
 }
 
-.footer__twitter {
+.footer__navbar-links > li{
+ 
+    display:inline;
+    padding: 10px 10px 10px 10px;
   
-  padding: 10px 10px 10px 10px;  
+}
+
+.footer__inner, .header__navbar {
+  
+  text-align: center;
+  
+}
+
+.footer__navbar-links{
+  
+ 
   
 }
