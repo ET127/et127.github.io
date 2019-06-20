@@ -23,6 +23,7 @@ body {
 header {
   
   
+  
 }
 
 main {
@@ -41,8 +42,7 @@ footer {
   
   background-color: var(--main-secondary-color);
   color: var(--main-primary-color);
-  position: fixed;
-  top:0;
+/*   top:0; */
   width:100%;
   text-align: center;
   display:inline;
