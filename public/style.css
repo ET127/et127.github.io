@@ -32,11 +32,22 @@ main {
   
 }
 
+.header {
+  
+  position: fixed;
+  top:0;
+  width:100%;
+  text-align: center;
+  display:inline;
+  background-color: var(--main-color);
+  
+}
+
 .header__inner {
   
   margin: 0 auto;
   color: var(--main-text-color);
-  background-color: var(--main-color);
+  
   
 }
 
@@ -79,20 +90,29 @@ main {
   position: fixed;
   bottom:0;
   width:100%;
-  text-align: center;
+/*   text-align: center; */
+  background-color: var(--main-color);
   
 }
 
+
+
 .footer__copyright-quote > p{
   
-  display:inline;
   
   
 }
 
 .footer__copyright-quote {
 
+  display:inline;
   padding: 7px 8px 9px 10px;
+  
+}
+
+.footer__twitter {
+  
+    display:inline;
   
 }
 
@@ -100,8 +120,8 @@ main {
   
   margin: 0 auto;
   color: var(--main-text-color);
-  background-color: var(--main-color);
-  
+  flex-wrap: wrap;
+
   
 }
 
