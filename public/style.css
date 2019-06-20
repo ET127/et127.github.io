@@ -83,15 +83,16 @@ main {
   
 }
 
-.footer__copyright-quote {
+.footer__copyright-quote > p{
   
+  display:inline;
   
   
 }
 
-.footer__twitter {
-  
-  
+.footer__copyright-quote {
+
+  padding: 7px 8px 9px 10px;
   
 }
 
@@ -100,6 +101,7 @@ main {
   margin: 0 auto;
   color: var(--main-text-color);
   background-color: var(--main-color);
+  
   
 }
 
