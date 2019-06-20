@@ -1,7 +1,7 @@
 /* styles */
 /* called by your view template */
 
-::root{
+:root{
   
   --main-text-color: #83D0F2;
   --main-color: rgb(34, 34, 2);
@@ -24,11 +24,17 @@ header {
   
 }
 
-.footer__inner {
+.header__inner {
   
   margin: 0 auto;
   color: var(--main-text-color);
   background-color: var(--main-color);
+  
+}
+
+.header__navbar {
+  
+  
   
 }
 
@@ -37,3 +43,13 @@ header {
   text-align: center;
   
 }
+
+
+.footer__inner {
+  
+  margin: 0 auto;
+  color: var(--main-text-color);
+  background-color: var(--main-color);
+  
+}
+
