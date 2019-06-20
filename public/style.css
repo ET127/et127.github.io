@@ -15,7 +15,10 @@ body {
   margin: 0 auto;
 }
 
-header {}
+header {
+  background: var(--main-secondary-color);
+  
+}
 
 main {
   margin: auto 15%;
@@ -27,9 +30,7 @@ footer {
 
 .header {
   
-  background-color: var(--main-secondary-color);
   color: var(--main-primary-color);
-  position: sticky;
   top: 0;
   width: 100%;
   text-align: center;
