@@ -61,6 +61,20 @@ footer {
   
 }
 
+.header__navbar-links > ul{
+  
+    display:flex;
+    flex-wrap: wrap;
+    width:25%;
+  
+}
+
+.header__navbar-links > li{
+ 
+  display:block;
+  
+}
+
 .header__inner, .header__navbar {
   
   text-align: center;
