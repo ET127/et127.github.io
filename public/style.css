@@ -105,21 +105,21 @@ main {
 
 .footer__copyright-quote {
 
-  display:inline;
-  padding: 7px 8px 9px 10px;
+  padding: 10px 10px 10px 10px;
   
 }
 
 .footer__twitter {
   
-    display:inline;
+  adding: 10px 10px 10px 10px;  
   
 }
 
 .footer__inner {
   
-  margin: 0 auto;
+  margin: auto 15%;
   color: var(--main-text-color);
+  display:flex;
   flex-wrap: wrap;
 
   
