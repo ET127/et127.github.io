@@ -16,11 +16,25 @@ body {
   
   font-family: 'Roboto';
   
+  margin: 0 auto;
+  
 }
 
 header {
   
-  margin: 0 auto;
+  
+  
+}
+
+main {
+  
+  
+  
+}
+
+footer {
+  
+  
   
 }
 
@@ -34,7 +48,16 @@ header {
 
 .header__navbar {
   
+  display:block;
+  width:;
   
+}
+
+.header__navbar-links {
+  
+  list-style-type: none;
+  margin: 0;
+  padding:0;
   
 }
 
