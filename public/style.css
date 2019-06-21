@@ -16,7 +16,6 @@ body {
 }
 
 header {
-  background: var(--main-secondary-color);
   
 }
 
@@ -29,12 +28,10 @@ footer {
 }
 
 .header {
-  
-  color: var(--main-primary-color);
-  top: 0;
+  background-color: var(--main-secondary-color);
+  color: var(--main-primary-color);  
   width: 100%;
   text-align: center;
-  display: inline;
 }
 
 .header__navbar-links {
