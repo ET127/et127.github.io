@@ -16,6 +16,8 @@ body {
 
 header {
   
+  
+  
 }
 
 main {
@@ -30,11 +32,12 @@ footer {
   background-color: var(--main-secondary-color);
   color: var(--main-primary-color);  
   width: 100%;
-  text-align: center;
 }
 
 .header__navbar-links {
   list-style-type: none;
+  padding: 0;
+  padding-bottom:20px;
   
 }
 
