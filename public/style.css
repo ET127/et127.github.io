@@ -68,12 +68,24 @@ footer {
   width: 100%;
 }
 
-.footer__navbar>span {
-  padding: 10px 10px 10px 10px;
+.footer__inner {
+  
 }
 
-.footer__inner, .footer__navbar {
-  text-align: center;
+.footer::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
-.footer__navbar-links {}
+.footer__copyright {
+  float: left;
+  padding: 10px;
+}
+
+.footer__nav {
+  float: right;
+  text-align: right;
+}
+
+.footer__nav-link {}
