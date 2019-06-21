@@ -12,8 +12,10 @@
 }
 
 body {
+  
   font-family: 'Roboto';
   margin: 0;
+  
 }
 
 header {
@@ -29,7 +31,9 @@ main {
 }
 
 footer {
-  /*   margin: auto 15%; */
+
+  
+  
 }
 
 .header {
