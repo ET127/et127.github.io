@@ -23,7 +23,7 @@ header {
 }
 
 main {
-  max-width: 480px;
+  max-width: 600px;
   margin: 0px auto;
   min-height: calc(100vh - 160px);
 }
@@ -81,7 +81,7 @@ footer {
 }
 
 .footer__inner {
-  max-width: 480px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
