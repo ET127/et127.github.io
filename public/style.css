@@ -11,8 +11,7 @@
 
 body {
   font-family: 'Roboto';
-  display: block;
-  margin: 0 auto;
+/*   margin: 0 auto; */
 }
 
 header {
@@ -36,8 +35,7 @@ footer {
 
 .header__navbar-links {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  
 }
 
 .header__navbar-links>ul {
@@ -53,20 +51,24 @@ footer {
   text-align: center;
 }
 
+.header__title> h1{
+  
+  margin:0;
+  
+}
+
 .footer {
   background-color: var(--main-secondary-color);
   color: var(--main-primary-color);
   position: fixed;
-  bottom: 0;
+/*   bottom: 0; */
   width: 100%;
-  text-align: center;
   display: inline;
 }
 
 .footer__navbar-links {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  padding:0;
 }
 
 .footer__navbar-links>ul {
@@ -79,8 +81,8 @@ footer {
   padding: 10px 10px 10px 10px;
 }
 
-.footer__inner, .header__navbar {
-  /*   text-align: center; */
+.footer__inner, .footer__navbar {
+  text-align: center;
 }
 
 .footer__navbar-links {}
