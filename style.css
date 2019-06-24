@@ -19,7 +19,7 @@ body {
 header {}
 
 main {
-  max-width: 600px;
+  max-width: 65%;
   margin: 0px auto;
   min-height: calc(100vh - 160px);
 }
