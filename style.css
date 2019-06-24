@@ -3,6 +3,7 @@
 :root {
   --main-primary-color: #83D0F2;
   --main-secondary-color: rgb(34, 34, 2);
+  --main-tertiary-color: rgb(83,121,122);
 }
 
 * {
@@ -12,16 +13,15 @@
 }
 
 body {
-  
+
   font-family: 'Roboto';
-  margin: 0;
-  
+
 }
 
 header {
-  
-  
-  
+
+
+
 }
 
 main {
@@ -32,13 +32,13 @@ main {
 
 footer {
 
-  
-  
+
+
 }
 
 .header {
   background-color: var(--main-secondary-color);
-  color: var(--main-primary-color);  
+  color: var(--main-primary-color);
   width: 100%;
   height: 100px;
   position: fixed;
@@ -52,19 +52,67 @@ footer {
   top: 100px;
 }
 
-.header__navbar-links {
-  list-style-type: none;
-  padding: 0;
-  padding-bottom:20px;
+.header__inner-container {
+
+  height:100%;
+
 }
 
-.header__navbar-links>ul {
+.header__inner {
+
+  height:100%;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.header__title {
+
+  flex: 1 1 auto;
+
+}
+
+.header__navbar {
+
+  flex: 1 1 auto;
+
+}
+
+.header__navbar-links {
+
+  height:100%;
+
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .header__navbar-links li {
-  display: inline;
+
+   height:100%;
+   flex: 1 1 auto;
+   padding:20px;
+
+  background-color: var(--main-secondary-color);
+
+
+}
+
+.header__navbar-links li a {
+
+  display:block;
+
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.header__navbar-links li:hover {
+
+  background-color: #555;
+  color: white;
+
 }
 
 .header__inner, .header__navbar {
@@ -72,28 +120,28 @@ footer {
 }
 
 .header__title> h1{
-  
+
   margin:0;
-  
+
 }
 
 .main__itch-game {
 
   width:100%;
   height:100%;
-  
+
 }
 
 .main__itch-list {
-  
+
   list-style-type: none;
-  
+
 }
 
 .main__projects-list {
-  
+
   list-style-type: none;
-  
+
 }
 
 .footer {
@@ -104,25 +152,35 @@ footer {
   box-sizing: border-box;
 }
 
-.footer__inner {
-  max-width: 600px;
-  margin: 0 auto;
+.footer__inner-container {
+
+  height:100%;
+
 }
 
-.footer::after {
-  content: '';
-  display: table;
-  clear: both;
+.footer__inner {
+
+   height:100%;
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  display: flex;
+
 }
 
 .footer__copyright {
-  float: left;
-  padding: 10px;
+
+  height:100%;
+  flex: 1 1 auto;
+  text-align:left;
+  padding:20px 10px;
 }
 
-.footer__nav {
-  float: right;
-  text-align: right;
+.footer__twitter {
+   flex: 1 1 auto;
+   text-align:right;
+   padding:4px;
 }
 
 .footer__nav-link {}
