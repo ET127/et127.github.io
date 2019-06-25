@@ -1,0 +1,22 @@
+{
+  "name": "et127.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ET127/et127.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ET127/et127.github.io/issues"
+  },
+  "homepage": "https://github.com/ET127/et127.github.io#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
