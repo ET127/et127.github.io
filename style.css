@@ -1,7 +1,6 @@
 :root {
   --main-primary-color: #83D0F2;
-  --main-secondary-color: rgb(34, 34, 2);
-  --main-tertiary-color: rgb(83, 121, 122);
+  --main-secondary-color: rgb(34, 34, 2);  --main-tertiary-color: rgb(83, 121, 122);
   --main-max-width: 70%;
 }
 
@@ -24,6 +23,24 @@ main {
 }
 
 footer {}
+
+.blink{
+      animation:blinkingText 1.25s infinite;
+  }
+  @keyframes blinkingText{
+      0%{     color: var(--main-primary-color);}
+      25%{    color: transparent; }
+      50%{    color: transparent; }
+      75%{    color: transparent; }
+      100%{   color: var(--main-primary-color);}
+}
+
+.header__element-title, .blink {
+
+  font-weight: bold;
+
+}
+
 
 .header {
   background-color: var(--main-secondary-color);
