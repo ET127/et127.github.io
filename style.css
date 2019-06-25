@@ -14,7 +14,12 @@ body {
   font-family: 'Roboto';
 }
 
-header {}
+header {
+
+  max-width: var(--main-max-width);
+  margin: 0px auto;
+
+}
 
 main {
   max-width: var(--main-max-width);
