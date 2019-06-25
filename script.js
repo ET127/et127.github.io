@@ -4,7 +4,7 @@ function blinker() {
 }
 setInterval(blinker(), 1000);
 
-const inputDate;
+const inputDate = undefined;
 const submitBtn = document.getElementById('main__submit-date');
 
 submit.submit('click',function(e){
