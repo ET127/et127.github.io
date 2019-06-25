@@ -16,7 +16,6 @@ body {
 
 header {
 
-  max-width: var(--main-max-width);
   margin: 0px auto;
 
 }
@@ -55,6 +54,7 @@ footer {}
   position: fixed;
   top: 0;
   left: 0;
+  right:0;
   z-index: 10;
 }
 
@@ -65,6 +65,8 @@ footer {}
 
 .header__inner {
 
+  margin: 0 auto;
+  max-width: var(--main-max-width);
   height: 100%;
   display: flex;
   flex-direction: column;
