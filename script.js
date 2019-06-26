@@ -51,10 +51,10 @@ listBtn.addEventListener('click', function() {
 function addToList(item) {
 
   list.push(item);
-	console.log(list.length);
+
   for (let i = 0; i < list.length; i++) {
 
-    listOutput.insertAdjacentHTML(beforeend,"<p>" + list[i].toString() + "<p>");
+    listOutput.insertAdjacentHTML('beforeend',"<pre>" + list[i].toString() + "</pre>";
 
   }
 
