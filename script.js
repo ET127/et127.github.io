@@ -51,6 +51,11 @@ listBtn.addEventListener('click', function() {
 function addToList(item) {
 
   list.unshift(item);
-  listOutput.innerHTML = "<pre>" + list.toString() + "</pre>";
+
+	list.forEach(function(item){
+
+ 	listOutput.innerHTML = "<pre>" + item.toString() + "</pre>";
+
+});
 
 }
