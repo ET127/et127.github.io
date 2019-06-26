@@ -4,13 +4,15 @@ function blinker() {
 }
 setInterval(blinker(), 1000);
 
-const output = document.getElementById('main__response');
+const dateOutput = document.getElementById('main__date-output');
+const listOutput = document.getElementById('main__list-output');
+let list = [''];
 
 setInterval(function(){
 
 	var inputDate = document.getElementById('main__input-date').value;
 	console.log();
-	output.innerHTML = subtractDates(inputDate);
+	dateOutput.innerHTML = subtractDates(inputDate);
 
 },1000);
 
@@ -28,5 +30,18 @@ function subtractDates(date){
 
 
   return days + " days, " + hours % 24 + " hours, " + min % 60  + " minutes and " + secs % 60 + " seconds left!";
+
+}
+
+function submit(){
+
+	addToList(document.getElementById('main__input-list-ite').value);
+
+}
+
+function addToList(item){
+
+		list.push(item);
+		listOutput.innerHTML = list.toString() + "<br>";
 
 }

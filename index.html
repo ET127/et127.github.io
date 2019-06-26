@@ -72,16 +72,28 @@
 
         </div>
 
-        <form id="main__form">
+        <div class="main__java-stuff">
 
           <div class="main__timer-calc">
 
             <input type="date" id="main__input-date"></input>
-            <p id="main__response"></p>
+            <p id="main__date-output"></p>
+
+          </div>
+          <div class="main__list-sort">
+
+            <form onsubmit="yourJsFunction();return false">
+
+              <input id="main__input-list-item" type="text">Type something!</input>
+              <input type="submit">Add to list!</input>
+              <p id="main__list-output"></p>
+
+            </form>
 
           </div>
 
-        </form>
+        </div>
+
 
       </div>
 
