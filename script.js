@@ -23,7 +23,7 @@ function subtractDates(date){
 	console.log(today + " subtract " + input);
 	var diff = input.getTime() - today.getTime();
 
-	var secs = diff /1000;
+	var secs = Math.round(diff / 1000);
 	var minutes = secs/60;
 	var hours = minutes / 60;
 	var days = hours / 24;
