@@ -76,16 +76,11 @@ function addToList(item) {
 }
 
 function organiseList(ulist) {
+	
   listOutput.innerHTML = '';
 
-
   const sortedList = ulist
-    // .map(function(item) {
-    //
-    // 	console.log(item);
-    //   return item.cloneNode(true);
-    //
-    // })
+
     .sort(function(a, b) {
 
       a = a.replace(/\s*/g, '');
@@ -105,11 +100,5 @@ function organiseList(ulist) {
       }
 
     });
-
-  // for (var i = 0; i < sortedList.length; i++) {
-  //
-  //   listOutput.insertAdjacentHTML('beforeend', "<pre><p>" + sortedList[i].toString() + "</p></pre>");
-  //
-  // }
 
 }
