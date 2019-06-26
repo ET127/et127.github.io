@@ -50,7 +50,7 @@ listBtn.addEventListener('click', function() {
 
 function addToList(item) {
 
-  list.unshift(item);
+  list.push(item);
 
 	for(let i = 0; i < list.length;i++)
 
