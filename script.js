@@ -73,10 +73,16 @@ function organiseList(ulist) {
 
     })
 		.forEach(function(item) {
-			const li = document.createElement('li');
-			li.innerText = item;
 
-			listOutput.append(li);
+			if(item != '') {
+
+				const li = document.createElement('li');
+				li.innerText = item;
+
+				listOutput.append(li);
+
+			}
+			
 		});
 
   // for (var i = 0; i < sortedList.length; i++) {
