@@ -19,6 +19,6 @@ submitBtn.addEventListener('click',function(e){
 function subtractDates(date){
 
 	Date inputDate = date;
-  return Date.prototype.getDate() - inputDate.UTC();
+  return Date.prototype.getDate();
 
 }
