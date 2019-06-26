@@ -120,6 +120,7 @@ footer {}
 
   display: flex;
   flex-wrap: wrap;
+  max-width: 75%;
 
 }
 
@@ -135,8 +136,6 @@ footer {}
 .main__projects-list {
   list-style-type: none;
 }
-
-
 
 .footer {
   background-color: var(--main-secondary-color);
