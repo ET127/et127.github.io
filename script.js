@@ -41,11 +41,11 @@ function subtractDates(date) {
 
 }
 
-function submit() {
+main__input-list-btn.addEventListener('click',function() {
 
   addToList(document.getElementById('main__input-list-item').value);
 
-}
+},false);
 
 function addToList(item) {
 
