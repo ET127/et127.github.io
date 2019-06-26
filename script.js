@@ -22,12 +22,12 @@ function subtractDates(date){
 	var today = new Date();
 	console.log(today + " subtract " + input);
 	var diff = input.getTime() - today.getTime();
-	
+
 	var secs = diff /1000;
 	var minutes = secs/60;
 	var hours = minutes / 60;
 	var days = hours / 24;
 
-  return days + ":" + hours + ":" + minutes % 60 + ":" + seconds % 60;
+  return days + ":" + hours + ":" + minutes % 60 + ":" + secs % 60;
 
 }
