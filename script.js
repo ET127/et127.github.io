@@ -11,8 +11,7 @@ submitBtn.addEventListener('click',function(e){
 
   e.preventDefault();
 
-	var inputDate = new Date();
-  inputDate = document.getElementById('main__input-date').value;
+	var inputDate =  inputDate = document.getElementById('main__input-date');
 	console.log(inputDate);
 	console.log(subtractDates(inputDate));
 
@@ -20,11 +19,9 @@ submitBtn.addEventListener('click',function(e){
 
 function subtractDates(date){
 
-	var inputDate = new Date();
+	var inputDate = new Date(date);
 	var today = new Date();
-
-	inputDate = date;
-
+	
   return (new Date()).getTime() - inputDate.getTime();
 
 }
