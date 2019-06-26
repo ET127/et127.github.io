@@ -21,7 +21,7 @@ function subtractDates(date) {
 
   var input = new Date(date);
   var today = new Date();
-  console.log(today + " subtract " + input);
+  // console.log(today + " subtract " + input);
   var diff = input.getTime() - today.getTime();
 
   if (diff != NaN) {
@@ -51,7 +51,29 @@ listBtn.addEventListener('click', function() {
 function addToList(item) {
 
   list.push(item);
+	organiseList(list);
 
-  listOutput.insertAdjacentHTML('beforeend',"<pre>" + item.toString() + "</pre>");
+
+}
+
+function organiseList(ulist) {
+
+  const sortedList = ulist
+    .map(function(item) {
+      return item.cloneNode(true);
+    })
+    .sort(function(a, b) {
+      a = a.innerText.replace(/\s*/g, '');
+      b = b.innerText.replace(/\s*/g, '');
+      return a > b ? 1 : a < b ? -1 : 0;
+    });
+
+  for (var i = 0; i < sortedList.length; i++) {
+
+    listOutput.insertAdjacentHTML('beforeend', "<pre><p>" + sortedList[i].toString() + "</p></pre>");
+
+  }
+
+
 
 }
