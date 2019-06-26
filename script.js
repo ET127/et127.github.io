@@ -8,17 +8,15 @@ setInterval(blinker(), 1000);
 const submitBtn = document.getElementById('main__submit-date');
 const output = document.getElementById('main__response');
 
-submitBtn.addEventListener('click',function(e){
+// submitBtn.addEventListener('click',function(e){
+//
+//   e.preventDefault();
+//
+//
+//
+// },false);
 
-  e.preventDefault();
-
-
-
-},false);
-
-
-
-setInterval(function{
+setInterval(function(){
 
 	var inputDate = document.getElementById('main__input-date').value;
 	console.log();
