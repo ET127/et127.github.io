@@ -71,7 +71,10 @@ function organiseList(ulist) {
       return a > b ? 1 : a < b ? -1 : 0;
 
     })
-		.forEach(function(item) {
+
+		 listOutput.innerHTML = '';
+
+		sortedList = sortedList.forEach(function(item) {
 			const li = document.createElement('li');
 			li.innerText = item;
 
