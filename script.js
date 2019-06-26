@@ -7,7 +7,7 @@ setInterval(blinker(), 1000);
 const dateOutput = document.getElementById('main__date-output');
 const listOutput = document.getElementById('main__list-output');
 const listBtn = document.getElementById('main__input-list-btn');
-let list = ["Apple"];
+let list = ["<li>Apple<li>"];
 
 setInterval(function() {
 
@@ -71,20 +71,14 @@ function organiseList(ulist) {
       return a > b ? 1 : a < b ? -1 : 0;
 
     })
-
-		 listOutput.innerHTML = '';
-
-		sortedList = sortedList.forEach(function(item) {
-			const li = document.createElement('li');
-			li.innerText = item;
-
-			listOutput.append(li);
+		.forEach(function(item) {
+			item = "<li>" + item + "</li>";
 		});
 
-  // for (var i = 0; i < sortedList.length; i++) {
-	//
-  //   listOutput.insertAdjacentHTML('beforeend', "<pre><p>" + sortedList[i].toString() + "</p></pre>");
-	//
-  // }
+  for (var i = 0; i < sortedList.length; i++) {
+
+    listOutput.insertAdjacentHTML('beforeend', sortedList[i]");
+
+  }
 
 }
