@@ -22,10 +22,15 @@ function subtractDates(date){
 	var diff = input.getTime() - today.getTime();
 
 	var secs = diff / 1000;
-	var minutes = secs/60;
+	var min = secs/60;
 	var hours = minutes / 60;
 	var days = hours / 24;
+	secs = Number.parseFloat(secs).toFixed(0);
+	min = Number.parseFloat(min).toFixed(0);
+	hours = Number.parseFloat(hours).toFixed(0);
+	days = Number.parseFloat(days).toFixed(0);
 
-  return Math.round(days) + " days, " + Math.round(hours % 24) + " hours, " +Math.round(minutes % 60)  + " minutes and " + Math.round(secs % 60) + " seconds left!";
+
+  return days + " days, " + hours % 24 + " hours, " + min % 60  + " minutes and " + secs % 60 + " seconds left!";
 
 }
