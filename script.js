@@ -12,11 +12,19 @@ submitBtn.addEventListener('click',function(e){
 
   e.preventDefault();
 
+
+
+},false);
+
+
+
+setInterval(function{
+
 	var inputDate = document.getElementById('main__input-date').value;
 	console.log();
 	output.innerHTML = subtractDates(inputDate);
 
-},false);
+},1000);
 
 function subtractDates(date){
 
