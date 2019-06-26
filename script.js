@@ -4,17 +4,7 @@ function blinker() {
 }
 setInterval(blinker(), 1000);
 
-
-const submitBtn = document.getElementById('main__submit-date');
 const output = document.getElementById('main__response');
-
-// submitBtn.addEventListener('click',function(e){
-//
-//   e.preventDefault();
-//
-//
-//
-// },false);
 
 setInterval(function(){
 
