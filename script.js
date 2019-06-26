@@ -7,7 +7,7 @@ setInterval(blinker(), 1000);
 
 const submitBtn = document.getElementById('main__submit-date');
 
-submitBtn.submit('click',function(e){
+submitBtn.addEventListener('click',function(e){
 
   e.preventDefault();
 
