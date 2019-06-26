@@ -7,7 +7,7 @@ setInterval(blinker(), 1000);
 const dateOutput = document.getElementById('main__date-output');
 const listOutput = document.getElementById('main__list-output');
 const listBtn = document.getElementById('main__input-list-btn');
-let list = ["Apple"];
+let list = [""];
 
 setInterval(function() {
 
@@ -82,7 +82,7 @@ function organiseList(ulist) {
 				listOutput.append(li);
 
 			}
-			
+
 		});
 
   // for (var i = 0; i < sortedList.length; i++) {
