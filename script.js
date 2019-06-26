@@ -59,13 +59,16 @@ function organiseList(ulist) {
 
   const sortedList = ulist
     .map(function(item) {
+
 			console.log(item);
       return item.cloneNode(true);
-    })
-    .sort(function(a, b) {
+
+    }).sort(function(a, b) {
+
       a = a.innerText.replace(/\s*/g, '');
       b = b.innerText.replace(/\s*/g, '');
       return a > b ? 1 : a < b ? -1 : 0;
+
     });
 
   for (var i = 0; i < sortedList.length; i++) {
@@ -73,7 +76,5 @@ function organiseList(ulist) {
     listOutput.insertAdjacentHTML('beforeend', "<pre><p>" + sortedList[i].toString() + "</p></pre>");
 
   }
-
-
 
 }
