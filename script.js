@@ -22,23 +22,35 @@ function subtractDates(date) {
   var input = new Date(date);
   var today = new Date();
   // console.log(today + " subtract " + input);
-  var diff = input.getTime() - today.getTime();
 
-  if (diff != NaN) {
+	if(input.getTime() > today.getTime()){
 
-    var secs = Math.floor(diff / 1000);
-    var min = Math.floor(secs / 60);
-    var hours = Math.floor(min / 60);
-    var days = Math.floor(hours / 24);
+	  var diff = input.getTime() - today.getTime();
 
 
-    return days + " days, " + hours % 24 + " hours, " + min % 60 + " minutes and " + secs % 60 + " seconds left!";
 
-  } else {
+	    var secs = Math.floor(diff / 1000);
+	    var min = Math.floor(secs / 60);
+	    var hours = Math.floor(min / 60);
+	    var days = Math.floor(hours / 24);
 
-    return "Input a date!";
+		if (secs != NaN) {
 
-  }
+	    return days + " days, " + hours % 24 + " hours, " + min % 60 + " minutes and " + secs % 60 + " seconds left!";
+
+	  } else {
+
+	    return "Input a date!";
+
+	  }
+
+	} else {
+
+			return "Input a valid date";
+
+	}
+
+	}
 
 }
 
