@@ -120,7 +120,7 @@ footer {}
 
   display: flex;
   flex-wrap: wrap;
-  overflow: auto;
+  overflow: hidden;
 
 }
 
