@@ -51,6 +51,6 @@ listBtn.addEventListener('click', function() {
 function addToList(item) {
 
   list.push(item);
-  listOutput.innerHTML = list.toString() + "<br>";
+  listOutput.innerHTML = list.toString() + "\n";
 
 }
