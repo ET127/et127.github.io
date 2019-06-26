@@ -11,7 +11,8 @@ submitBtn.addEventListener('click',function(e){
 
   e.preventDefault();
 
-  const inputDate = document.getElementById('main__input-date');
+	var inputDate = new Date();
+  inputDate = document.getElementById('main__input-date');
 	console.log(subtractDates(inputDate));
 
 },false);
