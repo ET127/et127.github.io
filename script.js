@@ -53,13 +53,13 @@ function addToList(item) {
   list.push(item);
 	organiseList(list);
 
-
 }
 
 function organiseList(ulist) {
 
   const sortedList = ulist
     .map(function(item) {
+			console.log(item);
       return item.cloneNode(true);
     })
     .sort(function(a, b) {
