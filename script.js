@@ -51,6 +51,6 @@ listBtn.addEventListener('click', function() {
 function addToList(item) {
 
   list.unshift(item);
-  listOutput.innerHTML = list.toString() + "<br />";
+  listOutput.innerHTML = "<p>" + list.toString() + "</p><br />";
 
 }
