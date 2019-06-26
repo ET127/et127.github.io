@@ -52,6 +52,6 @@ function addToList(item) {
 
   list.push(item);
 
-  listOutput.insertAdjacentHTML('beforeend',"<pre>" + list[i].toString() + "</pre>");
+  listOutput.insertAdjacentHTML('beforeend',"<pre>" + item.toString() + "</pre>");
 
 }
