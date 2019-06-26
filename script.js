@@ -11,8 +11,7 @@ submitBtn.submit('click',function(e){
 
   e.preventDefault();
 
-	const inputDate;
-  inputDate = document.getElementById('main__input-date');
+  const inputDate = document.getElementById('main__input-date');
 	console.log(subtractDates(inputDate));
 
 },false);
@@ -21,6 +20,5 @@ function subtractDates(inputDate){
 
 	const currentDate = new Date();
   return currentDate - inputDate.UTC();
-
 
 }
