@@ -23,34 +23,32 @@ function subtractDates(date) {
   var today = new Date();
   // console.log(today + " subtract " + input);
 
-	if(input.getTime() > today.getTime()){
+  if (input.getTime() > today.getTime()) {
 
-	  var diff = input.getTime() - today.getTime();
+    var diff = input.getTime() - today.getTime();
 
 
 
-	    var secs = Math.floor(diff / 1000);
-	    var min = Math.floor(secs / 60);
-	    var hours = Math.floor(min / 60);
-	    var days = Math.floor(hours / 24);
+    var secs = Math.floor(diff / 1000);
+    var min = Math.floor(secs / 60);
+    var hours = Math.floor(min / 60);
+    var days = Math.floor(hours / 24);
 
-		if (secs != NaN) {
+    if (secs != NaN) {
 
-	    return days + " days, " + hours % 24 + " hours, " + min % 60 + " minutes and " + secs % 60 + " seconds left!";
+      return days + " days, " + hours % 24 + " hours, " + min % 60 + " minutes and " + secs % 60 + " seconds left!";
 
-	  } else {
+    } else {
 
-	    return "Input a date!";
+      return "Input a date!";
 
-	  }
+    }
 
-	} else {
+  } else {
 
-			return "Input a valid date";
+    return "Input a valid date";
 
-	}
-
-	}
+  }
 
 }
 
@@ -74,44 +72,44 @@ listBtn.addEventListener('click', function() {
 function addToList(item) {
 
   list.push(item);
-	organiseList(list);
+  organiseList(list);
 
 }
 
 function organiseList(ulist) {
-	listOutput.innerHTML = '';
+  listOutput.innerHTML = '';
 
   const sortedList = ulist
     // .map(function(item) {
-		//
-		// 	console.log(item);
+    //
+    // 	console.log(item);
     //   return item.cloneNode(true);
-		//
+    //
     // })
-		.sort(function(a, b) {
+    .sort(function(a, b) {
 
       a = a.replace(/\s*/g, '');
       b = b.replace(/\s*/g, '');
       return a > b ? 1 : a < b ? -1 : 0;
 
     })
-		.forEach(function(item) {
+    .forEach(function(item) {
 
-			if(item != '') {
+      if (item != '') {
 
-				const li = document.createElement('li');
-				li.innerText = item;
+        const li = document.createElement('li');
+        li.innerText = item;
 
-				listOutput.append(li);
+        listOutput.append(li);
 
-			}
+      }
 
-		});
+    });
 
   // for (var i = 0; i < sortedList.length; i++) {
-	//
+  //
   //   listOutput.insertAdjacentHTML('beforeend', "<pre><p>" + sortedList[i].toString() + "</p></pre>");
-	//
+  //
   // }
 
 }
