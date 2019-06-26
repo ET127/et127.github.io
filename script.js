@@ -4,14 +4,23 @@ function blinker() {
 }
 setInterval(blinker(), 1000);
 
-const inputDate = undefined;
+
 const submitBtn = document.getElementById('main__submit-date');
 
-submit.submit('click',function(e){
+submitBtn.submit('click',function(e){
 
   e.preventDefault();
+
+	const inputDate;
   inputDate = document.getElementById('main__input-date');
+	console.log(subtractDates(inputDate));
 
 },false);
 
-console.log(inputDate).toString();
+function subtractDates(inputDate){
+
+	const currentDate = new Date();
+  return currentDate - inputDate.UTC();
+
+
+}
