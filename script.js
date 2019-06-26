@@ -20,6 +20,6 @@ function subtractDates(date){
 
 	const inputDate = date;
 	var today = new Date();
-  return today.getTime() - date.getTime();
+  return today.now() - date.now();
 
 }
