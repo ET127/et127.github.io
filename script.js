@@ -52,10 +52,10 @@ function addToList(item) {
 
   list.unshift(item);
 
-	list.forEach(function(item){
+	for(let i = 0; i < list.length;i++)
 
- 	listOutput.innerHTML = "<pre>" + item.toString() + "</pre>";
+ 		listOutput.innerHTML = "<pre>" + list[i].toString() + "</pre>";
 
-});
+	}
 
 }
