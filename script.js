@@ -41,7 +41,8 @@ function subtractDates(date) {
   }
 
 }
-input.addEventListener("keyup", function(event) {
+
+document.getElementById('main__input-list-item').addEventListener("keyup", function(event) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
     // Cancel the default action, if needed
@@ -49,8 +50,9 @@ input.addEventListener("keyup", function(event) {
     // Trigger the button element with a click
     listBtn.click();
   }
-	
+
 });
+
 listBtn.addEventListener('click', function() {
 
   addToList(document.getElementById('main__input-list-item').value);
