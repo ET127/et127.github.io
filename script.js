@@ -26,6 +26,6 @@ function subtractDates(date){
 	var hours = minutes / 60;
 	var days = hours / 24;
 
-  return Math.round(days) + ":" + Math.round(hours % 24) + ":" +Math.round(minutes % 60)  + ":" + Math.round(secs % 60);
+  return Math.round(days) + " days, " + Math.round(hours % 24) + " hours, " +Math.round(minutes % 60)  + " minutes and " + Math.round(secs % 60) + " seconds left!";
 
 }
