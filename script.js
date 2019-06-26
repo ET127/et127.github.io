@@ -58,23 +58,30 @@ function addToList(item) {
 function organiseList(ulist) {
 
   const sortedList = ulist
-    .map(function(item) {
-
-			console.log(item);
-      return item.cloneNode(true);
-
-    }).sort(function(a, b) {
+    // .map(function(item) {
+		//
+		// 	console.log(item);
+    //   return item.cloneNode(true);
+		//
+    // })
+		.sort(function(a, b) {
 
       a = a.innerText.replace(/\s*/g, '');
       b = b.innerText.replace(/\s*/g, '');
       return a > b ? 1 : a < b ? -1 : 0;
 
-    });
+    })
+		.forEach(function(item) {
+			const li = document.createElement('li');
+			li.innerText = item;
 
-  for (var i = 0; i < sortedList.length; i++) {
+			listOutput.append(li);
+		});
 
-    listOutput.insertAdjacentHTML('beforeend', "<pre><p>" + sortedList[i].toString() + "</p></pre>");
-
-  }
+  // for (var i = 0; i < sortedList.length; i++) {
+	//
+  //   listOutput.insertAdjacentHTML('beforeend', "<pre><p>" + sortedList[i].toString() + "</p></pre>");
+	//
+  // }
 
 }
