@@ -7,7 +7,7 @@ setInterval(blinker(), 1000);
 const dateOutput = document.getElementById('main__date-output');
 const listOutput = document.getElementById('main__list-output');
 const listBtn = document.getElementById('main__input-list-btn');
-let list = [''];
+let list = ["Apple"];
 
 setInterval(function() {
 
