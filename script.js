@@ -6,6 +6,7 @@ setInterval(blinker(), 1000);
 
 const dateOutput = document.getElementById('main__date-output');
 const listOutput = document.getElementById('main__list-output');
+const listInput = document.getElementById('main__input-list-item');
 const listBtn = document.getElementById('main__input-list-btn');
 let list = [""];
 
@@ -26,9 +27,6 @@ function subtractDates(date) {
   if (input.getTime() > today.getTime()) {
 
     var diff = input.getTime() - today.getTime();
-
-
-
     var secs = Math.floor(diff / 1000);
     var min = Math.floor(secs / 60);
     var hours = Math.floor(min / 60);
@@ -52,7 +50,7 @@ function subtractDates(date) {
 
 }
 
-document.getElementById('main__input-list-item').addEventListener("keyup", function(event) {
+listInput.addEventListener("keyup", function(event) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
     // Cancel the default action, if needed
@@ -65,7 +63,8 @@ document.getElementById('main__input-list-item').addEventListener("keyup", funct
 
 listBtn.addEventListener('click', function() {
 
-  addToList(document.getElementById('main__input-list-item').value);
+  addToList(listInput.value);
+	listInput.value = "";
 
 }, false);
 
@@ -78,6 +77,7 @@ function addToList(item) {
 
 function organiseList(ulist) {
   listOutput.innerHTML = '';
+
 
   const sortedList = ulist
     // .map(function(item) {
