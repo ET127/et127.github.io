@@ -21,7 +21,7 @@ function subtractDates(date){
 	console.log(today + " subtract " + input);
 	var diff = input.getTime() - today.getTime();
 
-	var secs = Math.floor(diff / 1000));
+	var secs = Math.floor(diff / 1000);
 	var min = Math.floor(secs/60);
 	var hours = Math.floor(min / 60);
 	var days = Math.floor(hours / 24);
