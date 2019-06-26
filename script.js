@@ -66,8 +66,8 @@ function organiseList(ulist) {
     // })
 		.sort(function(a, b) {
 
-      a = a.innerText.replace(/\s*/g, '');
-      b = b.innerText.replace(/\s*/g, '');
+      a = a.replace(/\s*/g, '');
+      b = b.replace(/\s*/g, '');
       return a > b ? 1 : a < b ? -1 : 0;
 
     })
