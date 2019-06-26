@@ -23,7 +23,7 @@ function subtractDates(date){
 
 	var secs = diff / 1000;
 	var min = secs/60;
-	var hours = minutes / 60;
+	var hours = min / 60;
 	var days = hours / 24;
 	secs = Number.parseFloat(secs).toFixed(0);
 	min = Number.parseFloat(min).toFixed(0);
