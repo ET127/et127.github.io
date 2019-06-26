@@ -6,6 +6,7 @@ setInterval(blinker(), 1000);
 
 const dateOutput = document.getElementById('main__date-output');
 const listOutput = document.getElementById('main__list-output');
+const listBtn = document.getElementById('main__input-list-btn');
 let list = [''];
 
 setInterval(function() {
@@ -41,11 +42,11 @@ function subtractDates(date) {
 
 }
 
-main__input-list-btn.addEventListener('click',function() {
+listBtn.addEventListener('click', function() {
 
   addToList(document.getElementById('main__input-list-item').value);
 
-},false);
+}, false);
 
 function addToList(item) {
 
