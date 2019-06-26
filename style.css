@@ -10,6 +10,13 @@
   box-sizing: border-box;
 }
 
+#main__list-output {
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
 body {
   font-family: 'Roboto';
 }
