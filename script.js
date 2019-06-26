@@ -52,10 +52,10 @@ function addToList(item) {
 
   list.push(item);
 
-	for(let i = 0; i < list.length;i++)
+  for (let i = 0; i < list.length; i++) {
 
- 		listOutput.innerHTML = "<pre>" + list[i].toString() + "</pre>";
+    listOutput.innerHTML = "<pre>" + list[i].toString() + "</pre>";
 
-	}
+  }
 
 }
