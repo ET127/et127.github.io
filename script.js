@@ -64,7 +64,7 @@ listInput.addEventListener("keyup", function(event) {
 listBtn.addEventListener('click', function() {
 
   addToList(listInput.value);
-	listInput.value = "";
+  listInput.value = "";
 
 }, false);
 
@@ -76,7 +76,7 @@ function addToList(item) {
 }
 
 function organiseList(ulist) {
-	
+
   listOutput.innerHTML = '';
 
   const sortedList = ulist
