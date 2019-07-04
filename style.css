@@ -1,6 +1,7 @@
 :root {
   --main-primary-color: #83D0F2;
-  --main-secondary-color: rgb(34, 34, 2);  --main-tertiary-color: rgb(83, 121, 122);
+  --main-secondary-color: rgb(34, 34, 2);
+  --main-tertiary-color: rgb(83, 121, 122);
   --main-max-width: 70%;
 }
 
@@ -15,9 +16,7 @@ body {
 }
 
 header {
-
   margin: 0px auto;
-
 }
 
 main {
@@ -28,23 +27,35 @@ main {
 
 footer {}
 
-.blink{
-      animation:blinkingText 1.25s infinite;
+.blink {
+  animation: blinkingText 1.25s infinite;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: var(--main-primary-color);
   }
-  @keyframes blinkingText{
-      0%{     color: var(--main-primary-color);}
-      25%{    color: transparent; }
-      50%{    color: transparent; }
-      75%{    color: transparent; }
-      100%{   color: var(--main-primary-color);}
+
+  25% {
+    color: transparent;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  75% {
+    color: transparent;
+  }
+
+  100% {
+    color: var(--main-primary-color);
+  }
 }
 
 .header__element-title, .blink {
-
   font-weight: bold;
-
 }
-
 
 .header {
   background-color: var(--main-secondary-color);
@@ -54,7 +65,7 @@ footer {}
   position: fixed;
   top: 0;
   left: 0;
-  right:0;
+  right: 0;
   z-index: 10;
 }
 
@@ -64,7 +75,6 @@ footer {}
 }
 
 .header__inner {
-
   margin: 0 auto;
   max-width: var(--main-max-width);
   height: 100%;
@@ -84,7 +94,7 @@ footer {}
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  align-items:stretch;
+  align-items: stretch;
 }
 
 .header__navbar-links li {
@@ -117,10 +127,8 @@ footer {}
 }
 
 .main__list-output-container {
-
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .main__itch-game {
@@ -128,15 +136,12 @@ footer {}
   height: 100%;
 }
 
-.main__itch-list, .main__projects-list,.main__site-list {
+.main__itch-list, .main__projects-list, .main__site-list {
   list-style-type: none;
 }
 
-
-.main__subtitle a{
-
+.main__subtitle a {
   text-decoration: none;
-
 }
 
 .footer {
