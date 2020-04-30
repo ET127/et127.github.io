@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/ET127/et127.github.io#readme",
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   }
 }
